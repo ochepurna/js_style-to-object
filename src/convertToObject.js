@@ -7,9 +7,8 @@
  */
 function convertToObject(sourceString) {
   const result = {};
-  const sourceEdited = sourceString;
 
-  sourceEdited
+  sourceString
     .split(';')
     .map((line) => line.trim())
     .filter((line) => line !== '' && line.includes(':'))
